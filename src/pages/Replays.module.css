@@ -1,0 +1,90 @@
+.page { max-width: 900px; }
+
+.header { margin-bottom: 28px; }
+
+.title {
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 60px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-family: var(--font);
+  font-size: 15px;
+  text-align: center;
+}
+
+.emptyIcon { font-size: 32px; color: var(--border); margin-bottom: 8px; }
+.emptyHint { font-family: var(--mono); font-size: 11px; }
+
+.list { display: flex; flex-direction: column; gap: 8px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: border-color 0.15s;
+}
+
+.row:hover { border-color: var(--accent); }
+
+.rowLeft { display: flex; align-items: center; gap: 14px; }
+
+.rowIcon { color: var(--accent); font-size: 12px; }
+
+.rowName {
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.rowPath {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.rowRight { display: flex; align-items: center; gap: 12px; }
+
+.uploadBtn {
+  padding: 6px 18px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.uploadBtn:hover { background: var(--accent); color: white; }
+
+.statusDone { font-family: var(--mono); font-size: 11px; color: var(--online); letter-spacing: 1px; }
+.statusError { font-family: var(--mono); font-size: 11px; color: var(--accent); letter-spacing: 1px; }
+.statusUploading { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 1px; animation: blink 1s infinite; }
+
+@keyframes blink { 50% { opacity: 0.4; } }

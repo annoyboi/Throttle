@@ -1,0 +1,118 @@
+.page { max-width: 600px; }
+
+.header { margin-bottom: 28px; }
+
+.title {
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.section {
+  margin-bottom: 32px;
+  padding: 24px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.sectionTitle {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13px;
+  margin-bottom: 12px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus { border-color: var(--accent); }
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+.actionBtn {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-bottom: 10px;
+}
+
+.actionBtn:hover { background: var(--accent); color: white; }
+
+.hint {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--online);
+  margin-top: 8px;
+}
+
+.links { display: flex; flex-direction: column; gap: 8px; }
+
+.link {
+  background: transparent;
+  border: none;
+  color: var(--accent2);
+  font-family: var(--mono);
+  font-size: 12px;
+  cursor: pointer;
+  text-align: left;
+  padding: 4px 0;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.link:hover { color: var(--accent); }
+
+.saveBtn {
+  padding: 12px 32px;
+  background: var(--accent);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.saveBtn:hover { background: var(--accent2); }
+.saved { background: var(--online); }

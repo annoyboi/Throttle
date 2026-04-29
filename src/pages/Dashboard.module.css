@@ -1,0 +1,139 @@
+.page { max-width: 900px; }
+
+.header { margin-bottom: 28px; }
+
+.title {
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--text);
+}
+
+.sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.cardLabel {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.cardValue {
+  font-family: var(--font);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section { margin-bottom: 32px; }
+
+.sectionTitle {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.eventFeed {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.empty {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  padding: 24px;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+
+.eventRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 14px;
+  background: var(--bg2);
+  border-radius: 4px;
+  border-left: 2px solid var(--accent);
+  animation: slideIn 0.2s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.eventTime {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+  min-width: 70px;
+}
+
+.eventName {
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.eventDetail {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent2);
+}
+
+.offlineBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg2);
+  border: 1px solid var(--offline);
+  border-radius: 8px;
+  color: var(--offline);
+}
+
+.offlineIcon { font-size: 24px; margin-top: 2px; }
+
+.offlineTitle {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.offlineDesc {
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
