@@ -28,7 +28,7 @@ Built as a BakkesMod successor after EAC dropped on April 28, 2026.
 
 ### Install & run
 ```bash
-git clone https://github.com/YOUR_USERNAME/throttle.git
+git clone https://github.com/annoyboi/throttle.git
 cd throttle
 npm install
 npm start
